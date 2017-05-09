@@ -1,10 +1,3 @@
-/*
-*=========================================================
-	Author       : ThemeBuskets
-	Template Name: Mairala | A Personal Portfolio Template
-	Version      : 1.0
-*=========================================================
-*/
 (function ($) {
 	'use strict';
 	
@@ -46,7 +39,7 @@
 	/*++++++++++++++++++++++++
 	-----Portfolio Sorter-----	    
 	++++++++++++++++++++++++++*/
-	$(".porject-container").isotope({
+	$(".project-container").isotope({
 		itemSelector: '.project-item'
 	}); 
 	var filterlistli = $(".filter-list li");
@@ -55,7 +48,7 @@
 		$(this).addClass("active");        
 
 			var selector = $(this).attr('data-filter'); 
-			$(".porject-container").isotope({ 
+			$(".project-container").isotope({ 
 				filter: selector, 
 				animationOptions: { 
 					duration: 750, 

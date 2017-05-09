@@ -11,8 +11,7 @@
 	<title>Adam Kasiraj</title>
 	
 	<!-- FAVICONS -->
-	<link rel="icon" href="assets/img/favicons/favicon.png">
-	<link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" href="img/favicon.png">
 	
 	<!--Style Sheets-->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> <!-- Google Font Css-->
@@ -42,7 +41,7 @@
 	
 	<!--Site Navigation Start-->
 	<div class="nav-bar-area"><!--Top Nav Bar-->
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<nav class="navbar" role="navigation">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -60,8 +59,10 @@
 						<ul class="nav navbar-nav navbar-right" id="nav">
 							<li class="current"><a href="#home">HOME</a></li>			
 							<li><a href="#projects">PORTFOLIO</a></li>
-							<li><a href="#resume">RESUME</a></li>	
 							<li><a href="#contact">CONTACT</a></li>
+							<li><a href="https://www.linkedin.com/in/adamkasiraj/" title="Linked In" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://codepen.io/adamkasiraj/" title="CodePen" target="_blank"><i class="fa fa-codepen"></i></a></li>
+							<li><a href="https://github.com/adamkasiraj" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>
 						</ul>
 					</div>
 				</nav>
@@ -73,7 +74,7 @@
 	<!---->
 	<!--Start Intro Section-->
 	<!---->
-	<Section id="home" class="section intro-section" style="background-image:url('img/austin.jpg');">
+	<Section id="home" class="section intro-section">
 		<div class="overlay"></div><!--Image Overlay-->
 		<div class="intro-main">
 			<div class="container">
@@ -93,13 +94,11 @@
 	<!---->
 	<!--End Intro Section-->
 	<!---->
-
-	<!---->
 	<!--Start Project Section-->
 	<!---->
 	
 	<section id="projects" class="section section-padding projects">
-		<div class="container">
+		<div class="container-fluid">
 			<!--Page Header-->
 			<div class="row section-header">
 				<h2>
@@ -109,43 +108,283 @@
 			<div class="row project-content text-center">
 				<ul class="filter-list">
 					<li data-filter="*" class="active">All</li>
-					<li data-filter=".webdesign">Web Dev</li>
-					<li data-filter=".graphics">Wordpress Dev</li>
-					<li data-filter=".photography">Graphics</li>
-					<li data-filter=".app">App</li>
+					<li data-filter=".webdev">Web Dev</li>
+					<li data-filter=".websites">Websites</li>
+					<li data-filter=".apps">Apps & Plug-ins</li>
+					<li data-filter=".wordpress">Wordpress</li>
+					<li data-filter=".graphics">Graphics</li>
 				</ul>
 				
 				<div class="project-container">
-					<!--Single Project Item-->
-					<div class="webdesign project-item grid">
-						<a href="#" data-toggle="modal" data-target="#exampleModal"><!--PopUp Image Link-->
+
+					<!-- Packery -->
+					<div class="webdev apps project-item grid">
+						<a class="image-popup-link" href="img/slide-packery.jpg" title="Packery Builder<br>A wordpress page template that allows articles to be featured in a responsive packery layout<br><br>
+					PHP, Wordpress, jQuery, Javascript, Packery, HTML, CSS"> <!--PopUp Image Link-->
 							<figure class="effect-lily">
-								<img src="img/product-compare/slide-2.jpg" alt="image">
-								<figcaption>
-									<div>
-										<h2>Product Compare </h2>
-										<p>A responsive widget to quickly compare product specs<br><br>
-										Javascript, jQuery, Demandware</p>
-									</div>
-								</figcaption>			
+								<img src="img/slide-packery.jpg" alt="">
+		
 							</figure>
 						</a>
 					</div>
-					<!--Single Testimonial-->
+
+					<!-- Compare -->
+					<div class="apps webdev project-item grid">
+						<a class="image-popup-link" href="img/slide-compare.jpg" title="Product Compare<br>A responsive widget to quickly compare product specs<br><br>
+					Javascript, jQuery, Demandware, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-compare.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Recent Order Map -->
+					<div class="apps webdev project-item grid">
+						<a class="image-popup-link" href="img/product-compare/slide-recent-orders.jpg" title="Recent Orders Map<br>A realtime map that updates the most recent orders for 5 different sites<br><br>
+					Javascript, jQuery, Google Maps API, Demandware"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-recent-orders.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Angular -->
+					<div class="webdev apps project-item grid">
+						<a class="image-popup-link" href="img/slide-angular.jpg" title="AngularJS Prototype App<br>An application that pulls in Wordpress articles<br><br>AngularJS front end, Wordpress back end, Wordpress API"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-angular.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Recommended Products Plug-in -->
+					<div class="webdev apps wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-rec-products.jpg" title="Recommended Products Plug-In<br>A wordpress plug-in that displays recommended products based on the content of currently viewed article<br><br>
+					PHP, Javascript, jQuery, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-rec-products.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Coupons Shortcode -->
+					<div class="webdev apps wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-coupons.jpg" title="Coupons Plug-In<br>A Wordpress plug-in that allows front end users to generate a coupon via a shortcode<br><br>
+					PHP, Bootstrap, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-coupons.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Mega Nav -->
+					<div class="webdev apps project-item grid">
+						<a class="image-popup-link" href="img/slide-mega-nav.jpg" title="Mega Nav<br>A fully responsive mega navigational menu<br><br>
+					Bootstrap, Javascript, Demandware, Wordpress API, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-mega-nav.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Rack -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-rack-express.jpg" title="RackExpress.com<br>Designed and developed the Rack Express website<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-rack-express.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Bayou Ops1 -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-bayou-ops1.jpg" title="BayouOps.com<br>Designed and developed this prototype website - presented at re-design pitch but was not chosen<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-bayou-ops1.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Bayou Ops2 -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-bayou-ops2.jpg" title="BayouOps.com<br>Designed and developed BayouOps website as part of a redesign project<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-bayou-ops2.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- We Buy -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-we-buy.jpg" title="WeBuyRack.com<br>Designed and developed the WeBuyRack website<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-we-buy.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Little Einsteins -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-little-einsteins.jpg" title="LittleEinsteinsLearningAcademy.com<br>Designed and developed the initial site for Little Einsteins Montessori Daycare<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-little-einsteins.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- NAWL -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-nawl.jpg" title="NAWLUSA.com<br>Designed and developed this site for North American Wholesale Logistics<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-nawl.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Greens Bayou -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-greens-bayou.jpg" title="GBPipeMill.com<br>A site redesign for Greens Bayou Pipe Mill<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-greens-bayou.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- ACE -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-ace-forklift.jpg" title="ACEForklift.com<br>A wordpress site that featured a live inventory of forklifts<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-ace-forklift.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Dallas Rack -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-dallas-rack.jpg" title="DallasPalletRack.com<br>Developed this site as a lead gen tool for potential pallet rack purchasers in the Dallas area<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-dallas-rack.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Katy Montessori -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-katy-montessori.jpg" title="KatyMontessori.com<br>Developed this informational website for Katy Montessori School<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-katy-montessori.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Warehouse Services -->
+					<div class="webdev websites wordpress project-item grid">
+						<a class="image-popup-link" href="img/slide-warehouse-services.jpg" title="WarehouseServices-USA.com<br>Designed and developed this lead gen website<br><br>
+					PHP, Wordpress, HTML, CSS"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-warehouse-services.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Ace Biz Card -->
 					<div class="graphics project-item grid">
-						<a class="image-popup-link" href="img/recent-order-map.jpg"><!--PopUp Image Link-->
+						<a class="image-popup-link" href="img/slide-ace-biz-card.jpg" title="Graphic Design<br>A business card for ACE Forklift<br><br>
+					Photoshop"> <!--PopUp Image Link-->
 							<figure class="effect-lily">
-								<img src="img/recent-order-map.jpg" alt="image">
-								<figcaption>
-									<div>
-										<h2>Recent Orders Map</h2>
-										<p>A real time map of recent orders across the US for several websites<br><br>
-											Javascript, Google Maps API, Demandware</p>
-									</div>	
-								</figcaption>			
+								<img src="img/slide-ace-biz-card.jpg" alt="">
+		
 							</figure>
 						</a>
 					</div>
+
+					<!-- ACE Flyer -->
+					<div class="graphics project-item grid">
+						<a class="image-popup-link" href="img/slide-ace-flyer.jpg" title="Graphic Design<br>A promotional flyer<br><br>InDesign, Photoshop"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-ace-flyer.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- OBD Logo -->
+					<div class="graphics project-item grid">
+						<a class="image-popup-link" href="img/slide-obd-logo.jpg" title="Logo Design<br>OpenBoxDirect site logo<br><br>Illustrator, Photoshop"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-obd-logo.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Rack/ACE Flyer -->
+					<div class="graphics project-item grid">
+						<a class="image-popup-link" href="img/slide-rack-ace-flyer.jpg" title="Graphic Design<br>A promotional flyer<br><br>InDesign, Photoshop"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-rack-ace-flyer.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Rack Flyer -->
+					<div class="graphics project-item grid">
+						<a class="image-popup-link" href="img/slide-rack-flyer.jpg" title="Graphic Design<br>A promotional flyer<br><br>InDesign, Photoshop"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-rack-flyer.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Realty Logo -->
+					<div class="graphics project-item grid">
+						<a class="image-popup-link" href="img/slide-realty-logo.jpg" title="Logo Design<br>A logo for Big State Realty<br><br>Photoshop"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-realty-logo.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
+					<!-- Rack Folder -->
+					<div class="graphics project-item grid">
+						<a class="image-popup-link" href="img/slide-rack-folder.jpg" title="Graphic Design<br>A bi-fold folder design for Rack Express<br><br>Illustrator"> <!--PopUp Image Link-->
+							<figure class="effect-lily">
+								<img src="img/slide-rack-folder.jpg" alt="">
+		
+							</figure>
+						</a>
+					</div>
+
 					
 				</div>
 			</div>
@@ -155,98 +394,13 @@
 	<!--End Project Section-->
 	<!---->
 
-		<!---->
-	<!--Start Resume Section-->
-	<!---->
-	<section id="resume" class="section section-padding dark-bg resume">
-		<div class="container">
-			<!--Page Header-->
-			<div class="row section-header">
-				<h2>
-					Resume
-				</h2>
-			</div>
-			<!--Page Content-->
-			<div class="row resume-content">
-				<!--Employment History-->
-				<div class="col-md-6 col-sm-6 education">
-					<!--Single Resume Item-->
-					<div class="single-item-resume">
-						<i class="pe-7s-portfolio"></i>
-						<div class="item-detail">
-							<h4 class="institute">Living Direct</h4>
-							<p class="date">WEB DEVELOPER</p>
-							<p class="date">2015 - PRESENT</p>
-							<p class="detail">
-								Worked on agile development team adding features and functionality to 8 different e-commerce sites hosted on Demandware. 
-								Also led and managed all dev projects on 5 different Wordpress sites.
-							</p>
-						</div>
-					</div>
-					<!--Single Resume Item-->
-					<div class="single-item-resume">
-						<i class="pe-7s-portfolio"></i>
-						<div class="item-detail">
-							<h4 class="institute">Living Direct</h4>
-							<p class="date">UI/UX DESIGNER</p>
-							<p class="date">2013 - 2015</p>
-							<p class="detail">
-								Worked on the creative design team acting as an in-house design agency for the marketing and dev teams. Efforts included promotional emails, graphics, site content re-designs, and new feature mock ups.
-							</p>
-						</div>
-					</div>
-					<!--Single Resume Item-->
-					<div class="single-item-resume">
-						<i class="pe-7s-portfolio"></i>
-						<div class="item-detail">
-							<h4 class="institute">North Shore Supply Co.</h4>
-							<p class="date">WEB DEVELOPER/DIGITAL MARKETING STRATEGIST</p>
-							<p class="date">2009 - 2013</p>
-							<p class="detail">
-								Introduced online presence for the company. Created, designed, developed, and maintained all company websites using Wordpress. Managed and implemented digital marketing, SEO, and PPC strategies
-							</p>
-						</div>
-					</div>
-				</div>
-				<!--Education History-->
-				<div class="col-sm-6 job">
-					<!--Single Resume Item-->
-					<div class="single-item-resume">
-						<i class="pe-7s-study"></i>
-						<div class="item-detail">
-							<h4 class="institute">University of Texas - Austin</h4>
-							<p class="date">2003 - 2007</p>
-							<p class="detail">
-								Interactive Advertising - Bachelor of Arts<br><br>
-								Business Foundations Certificate
-							</p>
-						</div>
-					</div>
-					<!--Single Resume Item-->
-					<div class="single-item-resume">
-						<i class="pe-7s-study"></i>
-						<div class="item-detail">
-							<h4 class="institute">Hands on Technology</h4>
-							<p class="date">2011</p>
-							<p class="detail">
-								PHP Foundations Certificate
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!---->
-	<!--End Resume Section-->
-	<!---->
 	
 	
 	<!---->
 	<!--Start Contact Section-->
 	<!---->
 	<section id="contact" class="section section-padding contact">
-		<div class="container">
+		<div class="container-fluid">
 			<!--Page Header-->
 			<div class="row section-header">
 				<h2>
@@ -283,7 +437,7 @@
 						<!--Single Contact Info-->
 						<div class="col-md-6 col-sm-6 single-contact-detail">
 							<div class="header">
-								<i class="pe-7s-mail-open"></i>
+								<a href="mailto:kasiraj.adam@gmail.com"><i class="pe-7s-mail-open"></i></a>
 								<h5>EMAIL</h5>
 							</div>
 							<p>kasiraj.adam@gmail.com</p>
@@ -294,7 +448,23 @@
 								<i class="pe-7s-world"></i>
 								<h5>WEBSITE</h5>
 							</div>
-							<p>http://www.adamkasiraj.com</p>
+							<p>adamkasiraj.com</p>
+						</div>
+						<!--Single Contact Info-->
+						<div class="col-md-6 col-sm-6 single-contact-detail">
+							<div class="header">
+								<a href="https://codepen.io/adamkasiraj"><i class="fa fa-codepen"></i></a>
+								<h5>CODEPEN</h5>
+							</div>
+							<p>codepen.io/adamkasiraj</p>
+						</div>
+						<!--Single Contact Info-->
+						<div class="col-md-6 col-sm-6 single-contact-detail">
+							<div class="header">
+								<a href="https://github.com/adamkasiraj"><i class="fa fa-github"></i></a>
+								<h5>GITHUB</h5>
+							</div>
+							<p>github.com/adamkasiraj</p>
 						</div>
 					</div>
 				</div>
@@ -316,9 +486,10 @@
 					<li><a href="https://twitter.com/adamkasiraj"><i class="fa fa-twitter"></i></a>
 					<li><a href="https://www.linkedin.com/in/adamkasiraj/"><i class="fa fa-linkedin"></i></a>
 					<li><a href="https://plus.google.com/u/1/116532350443127617448"><i class="fa fa-google-plus"></i></a>
+					<li><a href="https://codepen.io/adamkasiraj/"><i class="fa fa-codepen"></i></a>	
 					<li><a href="https://github.com/adamkasiraj"><i class="fa fa-github"></i></a>
 				</ul>
-				<p class="copy-text">©2017 <a href="#">Adam Kasiraj</a>. All Rights Reserved</p>
+				<p class="copy-text">©2017 <a href="http://www.adamkasiraj.com/">Adam Kasiraj</a>. All Rights Reserved</p>
 			</div>
 		</div>
 	</section>
@@ -326,32 +497,9 @@
 	<!--End Footer Section-->
 	<!---->
 
-	<div class="modal fade " id="exampleModal">
-	  	<div class="modal-dialog modal-lg" role="document">
-	    <div class="modal-content">
-	    	
-	      <div class="modal-body">
-	        <div class="modal-carousel owl-theme owl-carousel">
-	        	<div>
-	        		<figure class="effect-romeo">
-						<img src="img/product-compare/slide-1.jpg" class="img-responsive" />		
-					</figure>
-	        	</div>
-	        	<div>
-	        		<figure class="effect-romeo">
-						<img src="img/product-compare/slide-2.jpg" class="img-responsive" />		
-					</figure>
-	        	</div>
-	        	<div>
-	        		<figure class="effect-romeo">
-						<img src="img/product-compare/slide-3.jpg" class="img-responsive" />	
-					</figure>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+	<!---->
+	<!--End Footer Section-->
+	<!---->
 	
 	
 	<!---->
