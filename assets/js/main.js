@@ -39,9 +39,7 @@
 	/*++++++++++++++++++++++++
 	-----Portfolio Sorter-----	    
 	++++++++++++++++++++++++++*/
-	$(".project-container").isotope({
-		itemSelector: '.project-item'
-	}); 
+
 	var filterlistli = $(".filter-list li");
 	filterlistli.on( 'click', function() { 
 		filterlistli.removeClass("active");
